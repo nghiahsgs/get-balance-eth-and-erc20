@@ -1,0 +1,23 @@
+https://mainnet.infura.io/v3/88ae0e6a5f5e46a89c9398ccefc41647
+# Retrieve the Current Block Number
+## data post
+{"jsonrpc":"2.0","method":"eth_blockNumber","params": [],"id":1}
+## return
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x96b1a4"
+}
+
+# Check the Ether Balance For a Given Contract
+## datapost
+{"jsonrpc":"2.0","method":"eth_getBalance","params": ["0x164e787b5100262a5cb332eb2cd8578c5bb77080", "latest"],"id":1}
+0x164e787b5100262a5cb332eb2cd8578c5bb77080 is my eth address
+## return
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": 0x2a860cbdecdbdb
+}
+dec(0x2a860cbdecdbdb) => 11969338305993691 wei = 0.012 eth (1 eth = 10**18 wei)
+
